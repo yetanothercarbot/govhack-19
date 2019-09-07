@@ -2,7 +2,7 @@
 ## What is this?
 This is OSE423's submission to Govhack 2019. It comprises of a small IoT device that is intended to be installed in public spaces such as bus stops to educate people about their area.
 
-# APIs and Open Data Used
+## APIs and Open Data Used
 
 - [Air Quality Monitoring - Live data feed](https://www.data.qld.gov.au/dataset/air-quality-monitoring-live-data-feed)
 - [Coastal Data System – Near real time wave data](https://www.data.qld.gov.au/dataset/coastal-data-system-near-real-time-wave-data)
