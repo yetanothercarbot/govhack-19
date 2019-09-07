@@ -31,7 +31,7 @@ void setup() {
   randomSeed(analogRead(A0));
 
   if (!SPIFFS.begin()) {
-    raiseError();
+    raiseError("Storage failed.");
   }
 
   bool font_missing = false;
@@ -39,8 +39,7 @@ void setup() {
   if (SPIFFS.exists("/NotoSansBold36.vlw") == false) font_missing = true;
 
   if (font_missing) {
-    Serial.println("\r\nFont missing in SPIFFS, did you upload it?");
-    while (1) yield();
+    raiseError("Fonts missing!");
   }
 }
 
@@ -60,17 +59,20 @@ void updateText(int text_colour, int background_colour, int text) {
   tft.fillScreen(background_colour);
   tft.setTextColor(text_colour, background_colour);
 
+  tft.loadFont(FONT_LARGE); // Small font for header and footer
+  tft.drawCentreString(data[text], SCREEN_W / 2, (SCREEN_H -36)/ 2, 20);
+
   tft.loadFont(FONT_SMALL); // Small font for header and footer
   tft.drawCentreString(headers[text], SCREEN_W / 2, 5, 8);
   tft.drawCentreString(footers[text], SCREEN_W / 2, SCREEN_H - 20, 8);
-
-  tft.loadFont(FONT_LARGE); // Small font for header and footer
-  tft.drawCentreString(data[text], SCREEN_W / 2, (SCREEN_H -36)/ 2, 20);
 }
 
-void raiseError() {
+void raiseError(String errorText) {
   tft.setCursor(0, 0);
-  tft.fillScreen(TFT_BLACK);
-  tft.println("Internal error!");
+  tft.fillScreen(TFT_NAVY);
+  tft.setTextColor(TFT_WHITE);
+  tft.print("Internal error: ");
+  tft.println(errorText);
+  Serial.println(errorText); // In future, log to SPIFFS?
   while (1) yield(); // Stay here twiddling thumbs waiting
 }
