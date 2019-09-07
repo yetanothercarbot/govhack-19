@@ -1,0 +1,206 @@
+<airdata provider="Department of Environment and Science" state="Queensland" country="Australia">
+    <category name="Air Quality" measurementhour="11" measurementdate="2019-09-07">
+        <region name="Central Queensland" information="https://www.qld.gov.au/environment/pollution/monitoring/air/air-monitoring/network-stations/central-qld">
+            <station name="Blackwater" information="https://www.qld.gov.au/environment/pollution/monitoring/air/air-monitoring/network-stations/central-qld" longitude="148.881" latitude="-23.5627">
+                <measurement name="Particle PM10" rating_name="Fair" rating="3" index="90">45</measurement>
+                <measurement name="Particle PM2.5" rating_name="Very Good" rating="1" index="32.4">8.1</measurement>
+            </station>
+            <station name="West Mackay" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/mackay/" longitude="149.155" latitude="-21.1595">
+                <measurement name="Visibility" rating_name="Very Good" rating="1" index="2.1">5</measurement>
+                <measurement name="Particle PM10" rating_name="Good" rating="2" index="52">26</measurement>
+            </station>
+            <station name="Moranbah" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/mackay/" longitude="148.071" latitude="-21.9995">
+                <measurement name="Particle PM10" rating_name="Fair" rating="3" index="80.8">40.4</measurement>
+            </station>
+        </region>
+        <region name="Gladstone" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/gladstone/">
+            <station name="Memorial Park" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/gladstone/#memorial" longitude="151.252" latitude="-23.8443">
+                <measurement name="Ozone" rating_name="Good" rating="2" index="42">0.042</measurement>
+                <measurement name="Sulfur dioxide" rating_name="Very Good" rating="1" index="2.5">0.005</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="5.8">0.007</measurement>
+            </station>
+            <station name="Fisherman's Landing" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/gladstone/#fisherman" longitude="151.16" latitude="-23.7937">
+                <measurement name="Visibility" rating_name="Very Good" rating="1" index="23.4">55</measurement>
+                <measurement name="Sulfur dioxide" rating_name="Very Good" rating="1" index="0">0</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="6.7">0.008</measurement>
+                <measurement name="Particle PM10" rating_name="Very Poor" rating="5" index="168.4">84.2</measurement>
+                <measurement name="Particle PM2.5" rating_name="Very Poor" rating="5" index="219.6">54.9</measurement>
+            </station>
+            <station name="Clinton" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/gladstone/#clinton" longitude="151.222" latitude="-23.8701">
+                <measurement name="Visibility" rating_name="Good" rating="2" index="36.2">85</measurement>
+                <measurement name="Sulfur dioxide" rating_name="Very Good" rating="1" index="0">0</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="3.3">0.004</measurement>
+                <measurement name="Particle PM10" rating_name="Very Poor" rating="5" index="208">104</measurement>
+                <measurement name="Particle PM2.5" rating_name="Very Poor" rating="5" index="334">83.5</measurement>
+            </station>
+            <station name="Auckland Point" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/gladstone/#auckland" longitude="151.254" latitude="-23.8351">
+                <measurement name="Particle PM10" rating_name="Poor" rating="4" index="109.4">54.7</measurement>
+            </station>
+            <station name="South Gladstone" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/gladstone/#south_gladstone" longitude="151.27" latitude="-23.8626">
+                <measurement name="Visibility" rating_name="Good" rating="2" index="36.2">85</measurement>
+                <measurement name="Sulfur dioxide" rating_name="Very Good" rating="1" index="3">0.006</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="4.2">0.005</measurement>
+                <measurement name="Particle PM10" rating_name="Poor" rating="4" index="99.2">49.6</measurement>
+                <measurement name="Particle PM2.5" rating_name="Poor" rating="4" index="142.4">35.6</measurement>
+            </station>
+            <station name="Boat Creek" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/gladstone/#boat_creek" longitude="151.154" latitude="-23.8199">
+                <measurement name="Visibility" rating_name="Very Good" rating="1" index="28.5">67</measurement>
+                <measurement name="Sulfur dioxide" rating_name="Very Good" rating="1" index="2.5">0.005</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="4.2">0.005</measurement>
+                <measurement name="Particle PM10" rating_name="Very Poor" rating="5" index="185.2">92.6</measurement>
+                <measurement name="Particle PM2.5" rating_name="Very Poor" rating="5" index="305.6">76.4</measurement>
+            </station>
+            <station name="Boyne Island" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/gladstone/#boyne" longitude="151.351" latitude="-23.9408">
+                <measurement name="Visibility" rating_name="Good" rating="2" index="40.9">96</measurement>
+                <measurement name="Sulfur dioxide" rating_name="Very Good" rating="1" index="0.5">0.001</measurement>
+                <measurement name="Carbon monoxide" rating_name="Very Good" rating="1" index="0">0</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="0">0</measurement>
+                <measurement name="Particle PM10" rating_name="Unavailable" rating="0" index="-2222">-1111</measurement>
+                <measurement name="Particle PM2.5" rating_name="Unavailable" rating="0" index="-4444">-1111</measurement>
+            </station>
+            <station name="Targinie" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/gladstone/#targinie" longitude="151.105" latitude="-23.7744">
+                <measurement name="Visibility" rating_name="Very Good" rating="1" index="27.7">65</measurement>
+                <measurement name="Sulfur dioxide" rating_name="Very Good" rating="1" index="3">0.006</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="5">0.006</measurement>
+                <measurement name="Particle PM10" rating_name="Poor" rating="4" index="134.8">67.4</measurement>
+                <measurement name="Particle PM2.5" rating_name="Very Poor" rating="5" index="210">52.5</measurement>
+            </station>
+        </region>
+        <region name="Mount Isa" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/mtisa/">
+            <station name="Menzies" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/mtisa/index.html#menzies" longitude="139.492" latitude="-20.7167">
+                <measurement name="Sulfur dioxide" rating_name="Very Good" rating="1" index="0">0</measurement>
+            </station>
+            <station name="The Gap" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/mtisa/index.html#gap" longitude="139.498" latitude="-20.7264">
+                <measurement name="Sulfur dioxide" rating_name="Very Good" rating="1" index="0">0</measurement>
+                <measurement name="Particle PM10" rating_name="Very Poor" rating="5" index="261.6">130.8</measurement>
+            </station>
+        </region>
+        <region name="South East Queensland" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/seq/">
+            <station name="Flinders View" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/seq/#flinders" longitude="152.774" latitude="-27.6528">
+                <measurement name="Ozone" rating_name="Very Good" rating="1" index="28">0.028</measurement>
+                <measurement name="Visibility" rating_name="Very Good" rating="1" index="28.9">68</measurement>
+                <measurement name="Sulfur dioxide" rating_name="Very Good" rating="1" index="0">0</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="0.8">0.001</measurement>
+                <measurement name="Particle PM10" rating_name="Very Poor" rating="5" index="419.8">209.9</measurement>
+            </station>
+            <station name="North Maclean" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/seq/#northmaclean" longitude="153.03" latitude="-27.7708">
+                <measurement name="Ozone" rating_name="Very Good" rating="1" index="32">0.032</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="0">0</measurement>
+            </station>
+            <station name="Rocklea" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/seq/#rocklea" longitude="152.993" latitude="-27.5358">
+                <measurement name="Ozone" rating_name="Very Good" rating="1" index="29">0.029</measurement>
+                <measurement name="Visibility" rating_name="Good" rating="2" index="36.6">86</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="0.8">0.001</measurement>
+                <measurement name="Particle PM10" rating_name="Very Poor" rating="5" index="337.6">168.8</measurement>
+                <measurement name="Particle PM2.5" rating_name="Poor" rating="4" index="137.2">34.3</measurement>
+            </station>
+            <station name="Southport" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/seq#southport" longitude="153.402" latitude="-27.9612">
+                <measurement name="Ozone" rating_name="Very Good" rating="1" index="33">0.033</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="0.8">0.001</measurement>
+                <measurement name="Particle PM10" rating_name="Very Poor" rating="5" index="174.2">87.1</measurement>
+                <measurement name="Particle PM2.5" rating_name="Fair" rating="3" index="73.2">18.3</measurement>
+            </station>
+            <station name="Mutdapilly" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/seq/#mutdapilly" longitude="152.651" latitude="-27.7528">
+                <measurement name="Ozone" rating_name="Very Good" rating="1" index="30">0.03</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="0">0</measurement>
+            </station>
+            <station name="Woolloongabba" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/seq/#gabba" longitude="153.035" latitude="-27.4975">
+                <measurement name="Carbon monoxide" rating_name="Very Good" rating="1" index="5.6">0.5</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="1.7">0.002</measurement>
+                <measurement name="Particle PM10" rating_name="Very Poor" rating="5" index="327.6">163.8</measurement>
+                <measurement name="Particle PM2.5" rating_name="Poor" rating="4" index="115.6">28.9</measurement>
+            </station>
+            <station name="Springwood" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/seq/#springwood" longitude="153.136" latitude="-27.6125">
+                <measurement name="Ozone" rating_name="Very Good" rating="1" index="21">0.021</measurement>
+                <measurement name="Sulfur dioxide" rating_name="Very Good" rating="1" index="1">0.002</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="11.7">0.014</measurement>
+                <measurement name="Particle PM10" rating_name="Very Poor" rating="5" index="283.4">141.7</measurement>
+                <measurement name="Particle PM2.5" rating_name="Poor" rating="4" index="101.6">25.4</measurement>
+            </station>
+            <station name="South Brisbane" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/seq/#southbris" longitude="153.032" latitude="-27.4848">
+                <measurement name="Carbon monoxide" rating_name="Very Good" rating="1" index="1.1">0.1</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="7.5">0.009</measurement>
+                <measurement name="Particle PM10" rating_name="Very Poor" rating="5" index="312.8">156.4</measurement>
+                <measurement name="Particle PM2.5" rating_name="Poor" rating="4" index="109.6">27.4</measurement>
+            </station>
+            <station name="Wynnum West" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/seq/#wynnum" longitude="153.15" latitude="-27.4379">
+                <measurement name="Sulfur dioxide" rating_name="Very Good" rating="1" index="0">0</measurement>
+                <measurement name="Particle PM10" rating_name="Very Poor" rating="5" index="373.4">186.7</measurement>
+                <measurement name="Particle PM2.5" rating_name="Fair" rating="3" index="97.2">24.3</measurement>
+            </station>
+            <station name="Wynnum" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/seq/#wynnum" longitude="153.158" latitude="-27.4296">
+                <measurement name="Sulfur dioxide" rating_name="Very Good" rating="1" index="0.5">0.001</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="1.7">0.002</measurement>
+                <measurement name="Particle PM10" rating_name="Very Poor" rating="5" index="415.2">207.6</measurement>
+                <measurement name="Particle PM2.5" rating_name="Fair" rating="3" index="98">24.5</measurement>
+            </station>
+            <station name="Deception Bay" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/seq/#deception" longitude="153.158" latitude="-27.4296">
+                <measurement name="Ozone" rating_name="Unavailable" rating="0" index="-1111000">-1111</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Unavailable" rating="0" index="-925833.3">-1111</measurement>
+            </station>
+            <station name="Cannon Hill" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/seq/#cannonhill" longitude="153.087" latitude="-27.4654">
+                <measurement name="Ozone" rating_name="Very Good" rating="1" index="27">0.027</measurement>
+                <measurement name="Particle PM10" rating_name="Very Poor" rating="5" index="354.6">177.3</measurement>
+                <measurement name="Particle PM2.5" rating_name="Poor" rating="4" index="117.6">29.4</measurement>
+                <measurement name="Particles TSP" rating_name="Very Poor" rating="5" index="499.9">399.9</measurement>
+            </station>
+            <station name="Brisbane CBD" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/seq/#cbd" longitude="153.028" latitude="-27.4774">
+                <measurement name="Visibility" rating_name="Very Good" rating="1" index="31.5">74</measurement>
+                <measurement name="Particle PM10" rating_name="Very Poor" rating="5" index="330.8">165.4</measurement>
+            </station>
+            <station name="Mountain Creek" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/seq/#mountaincreek" longitude="153.104" latitude="-26.6917">
+                <measurement name="Ozone" rating_name="Very Good" rating="1" index="30">0.03</measurement>
+                <measurement name="Visibility" rating_name="Good" rating="2" index="36.6">86</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="0">0</measurement>
+                <measurement name="Particle PM10" rating_name="Very Poor" rating="5" index="245.8">122.9</measurement>
+            </station>
+            <station name="Lytton" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/seq/#wynnum" longitude="153.153" latitude="-27.4065">
+                <measurement name="Sulfur dioxide" rating_name="Very Good" rating="1" index="0">0</measurement>
+                <measurement name="Particle PM10" rating_name="Very Poor" rating="5" index="306.2">153.1</measurement>
+                <measurement name="Particle PM2.5" rating_name="Poor" rating="4" index="124.8">31.2</measurement>
+            </station>
+        </region>
+        <region name="South West Queensland" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/swq/">
+            <station name="Miles Airport" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/swq/#miles" longitude="0" latitude="0">
+                <measurement name="Ozone" rating_name="Unavailable" rating="0" index="-1111000">-1111</measurement>
+                <measurement name="Carbon monoxide" rating_name="Unavailable" rating="0" index="-12344.4">-1111</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Unavailable" rating="0" index="-925833.3">-1111</measurement>
+                <measurement name="Particle PM10" rating_name="Unavailable" rating="0" index="-2222">-1111</measurement>
+                <measurement name="Particle PM2.5" rating_name="Unavailable" rating="0" index="-4444">-1111</measurement>
+                <measurement name="Particles TSP" rating_name="Unavailable" rating="0" index="-1388.8">-1111</measurement>
+            </station>
+            <station name="Tara" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/swq/#tara" longitude="0" latitude="0">
+                <measurement name="Ozone" rating_name="Very Good" rating="1" index="25">0.025</measurement>
+                <measurement name="Carbon monoxide" rating_name="Very Good" rating="1" index="1.1">0.1</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="0.8">0.001</measurement>
+            </station>
+            <station name="Hopeland" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/swq/#hopeland" longitude="0" latitude="0">
+                <measurement name="Ozone" rating_name="Good" rating="2" index="39">0.039</measurement>
+                <measurement name="Carbon monoxide" rating_name="Very Good" rating="1" index="0">0</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="0">0</measurement>
+                <measurement name="Particle PM10" rating_name="Very Poor" rating="5" index="463">231.5</measurement>
+                <measurement name="Particle PM2.5" rating_name="Very Poor" rating="5" index="199.2">49.8</measurement>
+                <measurement name="Particles TSP" rating_name="Very Poor" rating="5" index="457">365.6</measurement>
+            </station>
+        </region>
+        <region name="Townsville" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/townsville/">
+            <station name="Coastguard" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/townsville/index.html#coast" longitude="146.827" latitude="-19.2526">
+                <measurement name="Particle PM10" rating_name="Good" rating="2" index="42.6">21.3</measurement>
+                <measurement name="Particles TSP" rating_name="Good" rating="2" index="33.8">27</measurement>
+            </station>
+            <station name="Environment Park" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/townsville/" longitude="146.831" latitude="-19.2629">
+                <measurement name="Particle PM10" rating_name="Good" rating="2" index="37.2">18.6</measurement>
+            </station>
+            <station name="Lennon Drive" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/townsville/" longitude="146.826" latitude="-19.2589">
+                <measurement name="Particle PM10" rating_name="Good" rating="2" index="40.4">20.2</measurement>
+            </station>
+            <station name="North Ward" information="https://www.qld.gov.au/environment/pollution/monitoring/air-monitoring/townsville/" longitude="146.807" latitude="-19.2509">
+                <measurement name="Visibility" rating_name="Very Good" rating="1" index="14.9">35</measurement>
+                <measurement name="Sulfur dioxide" rating_name="Very Good" rating="1" index="0">0</measurement>
+                <measurement name="Nitrogen dioxide" rating_name="Very Good" rating="1" index="0">0</measurement>
+                <measurement name="Particle PM10" rating_name="Very Good" rating="1" index="32">16</measurement>
+                <measurement name="Particle PM2.5" rating_name="Very Good" rating="1" index="31.6">7.9</measurement>
+            </station>
+        </region>
+    </category>
+</airdata>
