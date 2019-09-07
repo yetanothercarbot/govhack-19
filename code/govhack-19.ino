@@ -18,7 +18,7 @@ TFT_eSPI tft = TFT_eSPI();       // Invoke custom library
 #define SLIDE_LENGTH REPEAT_TIME/SLIDE_NO // How long each slide should show (ms)
 
 #define COLOUR_NO 13
-#define LIGHT_COLOUR
+#define COLOUR_LIGHT 4
 int colours[] = {TFT_MAROON, TFT_PURPLE, TFT_OLIVE, TFT_BLUE, TFT_MAGENTA, TFT_LIGHTGREY, TFT_GREEN, TFT_CYAN, TFT_RED, TFT_YELLOW, TFT_ORANGE, TFT_GREENYELLOW, TFT_PINK};
 
 int lastUpdate = 0;
@@ -46,9 +46,10 @@ void setup() {
 
 void loop() {
   if (millis() - lastUpdate > REPEAT_TIME / SLIDE_NO || lastUpdate == 0) {
-    updateText(TFT_BLACK, colours[random(0, COLOUR_NO)], counter);
+    int colour_selection = random(0, COLOUR_NO);
+    updateText((colour_selection > COLOUR_LIGHT) ? TFT_BLACK : TFT_WHITE, colours[colour_selection], counter);
     counter++;
-    if (counter > SLIDE_NO) {
+    if (counter >= SLIDE_NO) {
       counter = 0;
     }
     lastUpdate = millis();
@@ -60,11 +61,11 @@ void updateText(int text_colour, int background_colour, int text) {
   tft.setTextColor(text_colour, background_colour);
 
   tft.loadFont(FONT_SMALL); // Small font for header and footer
-  tft.drawCentreString(headers[text], SCREEN_W / 2, 0, 8);
-  tft.drawCentreString(footers[text], SCREEN_W / 2, SCREEN_H - 8, 8);
+  tft.drawCentreString(headers[text], SCREEN_W / 2, 5, 8);
+  tft.drawCentreString(footers[text], SCREEN_W / 2, SCREEN_H - 20, 8);
 
   tft.loadFont(FONT_LARGE); // Small font for header and footer
-  tft.drawCentreString(data[text], SCREEN_W / 2, SCREEN_H / 2, 20);
+  tft.drawCentreString(data[text], SCREEN_W / 2, (SCREEN_H -36)/ 2, 20);
 }
 
 void raiseError() {
