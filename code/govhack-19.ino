@@ -29,7 +29,7 @@ void setup() {
   tft.init();
   tft.setRotation(3);
   randomSeed(analogRead(A0));
-
+  
   if (!SPIFFS.begin()) {
     raiseError("Storage failed.");
   }
@@ -39,7 +39,7 @@ void setup() {
   if (SPIFFS.exists("/NotoSansBold36.vlw") == false) font_missing = true;
 
   if (font_missing) {
-    raiseError("Fonts missing!");
+    raiseError("Fonts missing.");
   }
 }
 
