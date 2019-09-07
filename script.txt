@@ -1,0 +1,14 @@
+We, OSE423, are working on creating digital displays for public transport stops that present the data of the location to the public as they wait for their transport. This hack will address the Environmental and Science Data Challenge, as well as the Spatial Information Challenge, and the Open APIs. A lot of us lead busy lives and don’t have the time to find out more about where we live. By having data about the areas we visit in our day to day lives in an easily accessible manner more people will engage in the data relevant to their communities. 
+
+OSE423 propose that it would be ideal have screens attached at bus stops and train stations that will display a cycle of facts about the area of the bus stop/train station however due to the limitations of time (48 hours) and access to relevant data, our project would produce facts about the state of Queensland not the individual suburbs and towns. 
+
+=== ===
+
+Let’s take a closer look at how the proof of concept works. It is based upon an ESP8266. It drives an ST7735 display over SPI. The screen, in this case, has a resolution of 160 by 128 pixels. While this is low resolution, and it certainly is not large at two inches, this is enough for three lines of text. 
+While currently not implemented, in the future, it is planned that the device can automatically download new facts to show and firmware updates either over mobile networks or, providing that the bus stations are close enough, LoRaWAN. 
+Furthermore, in the future, it could be based upon an ARM-based CPU, which would also allow it to run duty as an access point, allowing commuters to access the web whilst they are waiting for public transport. 
+
+=== ===
+
+So that our project addresses both the environmental and science data challenge, as well as the spatial information challenge we will be mixing facts about air quality, coastal data, flora bloom time, greenhouse gas emissions. These will be combined to display a summary of often overlooked facts and compare the present data with data from the past and predict future data so that the community members are more aware of their environments which will lead to better engagement. 
+Because knowing is better than not knowing. 
