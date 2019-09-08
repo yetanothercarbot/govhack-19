@@ -1,11 +1,14 @@
 // Govhack 19
+//  CED 423
 //  A display for public spaces
 //  to show information about localities.
-
+//  TODO:
 /* User settings */
 #include "settings.h"
+#include "wifi.h"
 
 /* Code begins */
+#include <ESP8266WiFi.h>
 #include <FS.h>
 #include <TFT_eSPI.h> // Hardware-specific library
 #include <SPI.h>
@@ -16,6 +19,7 @@
 TFT_eSPI tft = TFT_eSPI();       // Invoke custom library
 
 #define SLIDE_LENGTH REPEAT_TIME/SLIDE_NO // How long each slide should show (ms)
+// #define
 
 #define COLOUR_NO 13
 #define COLOUR_LIGHT 4
@@ -25,11 +29,12 @@ int lastUpdate = 0;
 int counter = 0;
 
 void setup() {
-  // put your setup code here, to run once:
+  Serial.begin(115200);
+  // Initialise TFT first
   tft.init();
   tft.setRotation(3);
   randomSeed(analogRead(A0));
-  
+
   if (!SPIFFS.begin()) {
     raiseError("Storage failed.");
   }
@@ -41,6 +46,24 @@ void setup() {
   if (font_missing) {
     raiseError("Fonts missing.");
   }
+
+  // Show loading screen whilst device connects to WiFi.
+
+  tft.loadFont(FONT_LARGE); // Large font for main data
+  tft.fillScreen(TFT_BLACK);
+  tft.setTextColor(TFT_WHITE, TFT_BLACK);
+  tft.drawCentreString("Please wait...", SCREEN_W / 2, (SCREEN_H - 36) / 2, 20);
+
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+
+  /* TODO: Limit connection time, switch back to fallback */
+  while (WiFi.status() != WL_CONNECTED && Serial.available() == 0) {
+    yield(); // Wait until connected
+
+  }
+  tft.fillScreen(TFT_BLACK);
+  bool wifiEnabled = (WiFi.status() == WL_CONNECTED);
 }
 
 void loop() {
@@ -59,12 +82,12 @@ void updateText(int text_colour, int background_colour, int text) {
   tft.fillScreen(background_colour);
   tft.setTextColor(text_colour, background_colour);
 
-  tft.loadFont(FONT_LARGE); // Small font for header and footer
-  tft.drawCentreString(data[text], SCREEN_W / 2, (SCREEN_H -36)/ 2, 20);
+  tft.loadFont(FONT_LARGE); // Large font for main data
+  tft.drawCentreString(data[text], SCREEN_W / 2, (SCREEN_H - 36) / 2, 20);
 
   tft.loadFont(FONT_SMALL); // Small font for header and footer
-  tft.drawCentreString(headers[text], SCREEN_W / 2, 5, 8);
-  tft.drawCentreString(footers[text], SCREEN_W / 2, SCREEN_H - 20, 8);
+  tft.drawCentreString(headers[text], SCREEN_W / 2, 5, 10);
+  tft.drawCentreString(footers[text], SCREEN_W / 2, SCREEN_H - 20, 10);
 }
 
 void raiseError(String errorText) {
