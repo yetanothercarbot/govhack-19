@@ -19,7 +19,8 @@
 TFT_eSPI tft = TFT_eSPI();       // Invoke custom library
 
 #define SLIDE_LENGTH REPEAT_TIME/SLIDE_NO // How long each slide should show (ms)
-// #define
+#define SERVER_IP "192.168.43.81"
+#define SERVER_PORT 5000
 
 #define COLOUR_NO 13
 #define COLOUR_LIGHT 4
@@ -76,6 +77,7 @@ void loop() {
     }
     lastUpdate = millis();
   }
+//  tft.drawLine(0, 239, 320 * ((millis() - lastUpdate) / SLIDE_LENGTH), 239, TFT_WHITE);
 }
 
 void updateText(int text_colour, int background_colour, int text) {
