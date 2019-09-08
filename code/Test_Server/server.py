@@ -24,7 +24,7 @@ def listening(conn):
 			conn.close()
 			break
 		value = execute(data)
-		conn.send(bytes(value.endcode()))
+		conn.send(bytes("{}\n".format(value).encode()))
 
 def get_summary():
 # This function will read the xml files for weather and air quality and format
