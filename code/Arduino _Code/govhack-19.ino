@@ -28,6 +28,10 @@ int colours[] = {TFT_MAROON, TFT_PURPLE, TFT_OLIVE, TFT_BLUE, TFT_MAGENTA, TFT_L
 
 int lastUpdate = 0;
 int counter = 0;
+bool wifiEnabled;
+
+String airQuality[] = {"Very Poor", "Poor", "Fair", "Good", "Very Good"};
+String weather[] = {"Sunny", "Cloudy", "Rainy", "Stormy"}; 
 
 void setup() {
   Serial.begin(115200);
@@ -64,11 +68,13 @@ void setup() {
 
   }
   tft.fillScreen(TFT_BLACK);
-  bool wifiEnabled = (WiFi.status() == WL_CONNECTED);
+  wifiEnabled = (WiFi.status() == WL_CONNECTED);
 }
 
 void loop() {
   if (millis() - lastUpdate > REPEAT_TIME / SLIDE_NO || lastUpdate == 0) {
+    fetchUpdate();
+
     int colour_selection = random(0, COLOUR_NO);
     updateText((colour_selection > COLOUR_LIGHT) ? TFT_BLACK : TFT_WHITE, colours[colour_selection], counter);
     counter++;
@@ -77,7 +83,38 @@ void loop() {
     }
     lastUpdate = millis();
   }
-//  tft.drawLine(0, 239, 320 * ((millis() - lastUpdate) / SLIDE_LENGTH), 239, TFT_WHITE);
+  //  tft.drawLine(0, 239, 320 * ((millis() - lastUpdate) / SLIDE_LENGTH), 239, TFT_WHITE);
+}
+
+void fetchUpdate() {
+  if (wifiEnabled) {
+    WiFiClient client;
+
+    if (!client.connect(SERVER_IP, SERVER_PORT)) {
+      wifiEnabled = false;
+      return;
+    }
+
+    client.print("update");
+
+    unsigned long timeoutStart = millis();
+    while (client.available() == 0) {
+      if (millis() - timeoutStart > 5000) {
+        wifiEnabled = false;
+        client.stop();
+        return;
+      }
+    }
+
+    // Read all the lines of the reply from server and print them to Serial
+    while (client.available()) {
+      String line = client.readStringUntil('\n');
+      data[0] = airQuality[line.substring(0,1).toInt()];
+      data[4] = (String)(line.subString(2,5).toInt() - 273);
+      data[5] = weather[line.substring
+    }
+    
+  }
 }
 
 void updateText(int text_colour, int background_colour, int text) {
